@@ -1,0 +1,14 @@
+public class Player
+{
+    public int RollDie()
+    {
+        var rand = new System.Random();
+        return rand.Next(1, 18);
+    }
+
+    public double GenerateSpellStrength()
+    {
+        var rand = new System.Random();
+        return (rand.NextDouble() * 99) + 1;
+    }
+}
